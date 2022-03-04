@@ -1,0 +1,76 @@
+html {
+    --white: hsl(0, 0%, 97%);
+    --black: hsl(0, 0%, 5%);
+    --blue: hsl(250, 50%, 62%);
+    --twitter: #38a1f3;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: calc(16px * 0.5vw);
+    background-color: var(--white);
+    color: var(--black);
+    background-image: url('flower.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  blockquote {
+    margin: 0;
+    padding: 0.5em;
+  }
+  
+  button,
+  .button {
+    display: inline-block;
+    font-family: Roboto, sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid grey;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    margin: 0 0.5em;
+    cursor: pointer;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  @media screen and (max-width: 890px) {
+    body {
+      justify-content: flex-start;
+      font-size: 15px;
+    }
+  }
+  
+  @media screen and (min-width: 890px) {
+    body {
+      font-size: 18px;
+    }
+  
+    button,
+    .button {
+      margin: 0.5em;
+    }
+  }
+  
