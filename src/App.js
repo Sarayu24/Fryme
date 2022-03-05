@@ -31,7 +31,6 @@ class App extends Component {
   }
 
   render() {
-    const { text, author } = this.state.currentQuote
 
     return (
       <Layout>
